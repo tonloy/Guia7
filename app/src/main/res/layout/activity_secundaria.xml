@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dev4u.hv.guia7.Secundaria">
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:id="@+id/lblId_pro_main"
+            android:text="id_cat "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtProducto"
+            android:hint="nombre producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:hint="Descripcion"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/layout2"
+        android:layout_height="wrap_content"
+         />
+    <EditText
+        android:id="@+id/txtIdCat"
+        android:hint="Id categoria"
+        android:enabled="false"
+        android:layout_below="@id/txtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnGuardarProducto"
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIdCat"/>
+    <Button
+        android:id="@+id/btnEliminarProducto"
+        android:text="Eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtIdCat"/>
+
+    <ListView
+        android:id="@+id/lstProductos"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btnGuardarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
